@@ -1,0 +1,126 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">        
+		<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Oxygen:400,700|Exo+2:400,300' rel='stylesheet' type='text/css'>
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        
+        <header>
+        <!-- the "banner" area or title of the page-->
+
+
+        <h1>Stone Soup: what have you brought to share?</h1>
+        <!-- only h1 per page (for SEO purposes) -->
+    </header>
+        
+                
+        
+        
+        <table id=T1>
+        	
+        	<!--table headings-->
+<thead>
+<th>Control type</th>
+<th>Control</th>
+<th>Values entered</th>
+<th>Commentary</th>
+</thead>
+
+
+<tbody>
+
+<!--Tablerow Checkboxes-->
+  <tr>
+    <td>input type="checkbox"</td>
+    <td>The basics:<br>    
+  <input type="checkbox" id="item1" value="Wood" name="ingred">Wood <br>
+  <input type="checkbox" id="item2" value="Pot"name="ingred"> Pot<br>
+  <input type="checkbox" id="item3" value="Stones" name="ingred">Stones<br></td>
+  <td id="td1">placehold</td>
+  <td >Checkboxes allow multiple items to be selected in a given list.In this case all the items are needed.</td>
+  </tr>
+  
+  <!--Tablerow Radio Buttons-->
+  <tr>
+    <td >input type="radio"</td>
+    <td>Pick your protein:<br>
+  <input type="radio" name="protein" value="Beef" checked="checked" id="radio1">Beef<br/>
+  <input type="radio" name="protein" value="Fish" id="radio2" />Fish<br>
+  <input type="radio" name="protein" value="Tofu" id="radio3" />Tofu</td>
+    <td id="td2">placehold</td>
+    <td > Radio buttons, unlike checkboxes, only one radio button from the group can be selected at any given time. In this case, only one protein goes in the soup.</td>
+  </tr>
+  
+   <!--Tablerow Selection-->
+  <tr>
+    <td>Select</td>
+    <td>Choose some veg:
+		<select name="Veglist" size="1">
+			<option selected value="Mushrooms">Mushrooms</option>
+			<option value="Carrots">Carrots</option>
+			<option value="Potatoes">Potatoes</option>
+			<option value="Celery">Celery</option>
+			<option value="Parsnips">Parsnips</option>
+          </select></td>
+    <td id="td3">placehold</td>
+    <td>The "select" element is used to create a dropdown list.</td>
+  </tr>
+  
+   <!--Tablerow text field-->
+ <tr>
+    <td >input type="text"</td>Enter your name: <input type="text" id="text" onkeyup="myFunction()">
+   <td><fieldset form="form1">
+  <legend>Additional desire</legend>
+              <input type ="text" name="box" placeholder="ingredient">
+</fieldset></td>
+ <td id="td4"><span id="text"></span>placehold</td>
+  </tr>
+  
+  <!--Tablerow text area-->
+  <tr>
+   <td>textarea</td>
+<td>And what else have you brought for the soup?<textarea rows="4" cols="50" placeholder="List them here..."></textarea></td>
+<td>placehold</td>
+<<td id="td5">iThe textarea tag defines a multi-line text input control.</td>
+  
+  <!--Buttons-->
+ <tr><td><input type="button" name="clear" value="Clear Form" onclick="clearForm(this.form);" ></td></tr>
+  </tbody>
+</table>
+
+
+
+
+
+        <script src="https://code.jquery.com/jquery-1.12.2.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.2.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+        <script>
+            window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+            ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
+        </script>
+        <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+    </body>
+</html>
